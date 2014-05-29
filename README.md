@@ -24,6 +24,10 @@ This module has been tested to work on the following systems.
 
 * Fedora 20
 * CentOS 6.x
+* SLES 11
+
+It should work on all linux systems supported by puppet as it uses a single config file
+in a consistant location. 
  
 ## Dependencies
 
