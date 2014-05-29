@@ -1,7 +1,7 @@
 # This file maintained by puppet, do not edit.
 
 dir <%= @cachedir %>
-cachetag <%= @cachetag %>
+tag <%= @cachetag %>
 <% if @culltable -%>
 culltable <%= @culltable %>
 <% end %>
@@ -23,7 +23,7 @@ bcull <%= @bcull %>
 fcull <%= @fcull %>
 
 # bstop and fstop represent the percent free on the file system at which point cachefilesd will
-# stop writing new files. It will resume writes only after the free space has risen to the 
+# stop writing new files. It will resume writes only after the free space has risen to the
 # ammount specified in brun and frun.
 
 bstop <%= @bstop %>
