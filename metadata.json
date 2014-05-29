@@ -1,0 +1,27 @@
+{
+  "author": "Bob Rentschler",
+  "checksums": {
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "manifests/init.pp": "1c368f4185857ef6cb08d24819c20f10",
+    "manifests/install.pp": "9b72c993004937dc6ba63a0f62a2f0e5",
+    "templates/cachefilesd.conf.erb": "ba825bc9e49854cd76e2894a4c711558",
+    "manifests/config.pp": "9fce270fbcc8f2821779d02f398fe06e",
+    "README.md": "7eaf63e3622d132b78b717d79cac0178",
+    "Modulefile": "f0ee1dfe01f25cecdf8e46ab84fab157",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    ".README.md.html": "c7bff58b8dd2e53040885dd925ff6394",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests/service.pp": "7841f0c5b93d476a1b3ad5664a7f6a3c",
+    "manifests/params.pp": "6bc0d6516b841ff0125a80c9f070f47b",
+    "tests/init.pp": "4990367b6da0186d7e6f5ca8e37a7204"
+  },
+  "dependencies": [],
+  "description": "",
+  "license": "GPL v2",
+  "name": "brentsch-cachefilesd",
+  "project_page": "",
+  "source": "",
+  "summary": "Module to control and configure cachefilesd.",
+  "types": [],
+  "version": "0.1.0"
+}
