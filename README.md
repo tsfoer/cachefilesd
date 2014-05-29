@@ -13,7 +13,7 @@
 
 # Overview
 
-This Puppet module is designed to facilitate the installation and configuration of [cachefilesd](http://people.redhat.com/dhowells/fscache/). 
+This Puppet module is designed to facilitate the installation and configuration of [cachefilesd](http://people.redhat.com/dhowells/fscache/).
 The primary scope includes installing the package on the system and populating the config file with the appropriate values.
 
 Reasonable defaults have been set, so including the module with no settings will allow it to run.
@@ -26,9 +26,14 @@ This module has been tested to work on the following systems.
 * CentOS 6.x
 * SLES 11
 
-It should work on all linux systems supported by puppet as it uses a single config file
-in a consistant location. 
- 
+Sections for all Linux versions reported by osfamily are present in params.pp and should
+work as all distros seem to repackage the RedHat package exactly as it is. If you have
+success with this module on an un-tested distro please [report it](https://github.com/phoenixv/cachefiled)
+so the documentation may be updated.
+
+It should work on all Linux systems supported by puppet as it uses a single configuration file
+in a consistent location.
+
 ## Dependencies
 
 - [puppetlabs/stdlib](https://github.com/puppetlabs/puppetlabs-stdlib)
@@ -76,19 +81,19 @@ cachefilesd::fstop: '5%'
 # Parameters
 
 All Parameters are optional, if none are specified the defaults will use all but 10% of the drive on
-which the cache resides.  
+which the cache resides.
 
 - brun - Defaults to 10%. Amount of free space (in blocks) required for free running operation.
 - frun - Defaults to 10%. Number of free files on the filesystem required for free running operation.
 - bcull - Defaults to 7%. Amount of free space (in blocks) remaining at which cachefilesd culls the cache.
-- fcull - Defaults to 7%. Same as bcull but for free files remaining. 
+- fcull - Defaults to 7%. Same as bcull but for free files remaining.
 - bstop - Defaults to 3%. Amount of free space (in blocks) remaining at which cachefilesd stops writing new files.
 - fstop - Defaults to 3%. Same as bstop but for free files remaining.
 - cachedir - Location for the cache (/var/cache/fscache). It is not recommended to change this, particularly if selinux is enabled.
 - disablecull - Default false. Turns off culling, may be useful in some cases but generally should be left alone.
 - debugcache - Defaults to 0, see **man cachefilesd.conf** for values.
 - culltable - Defaults to 12, see **man cachefilesd.conf** for values.
-- secctx - Default is OS dependant. SElinux context to run under. 
+- secctx - Default is OS dependant. SElinux context to run under.
 
 # Limitations
 

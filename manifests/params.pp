@@ -15,7 +15,7 @@ class cachefilesd::params {
   $fstop = '3%'
 
   case $::osfamily {
-    'RedHat' : {
+    'RedHat'    : {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
@@ -25,7 +25,7 @@ class cachefilesd::params {
       $cachedir = '/var/cache/fscache'
       $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
-    'SuSE'   : {
+    'Debian'    : {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
@@ -35,7 +35,47 @@ class cachefilesd::params {
       $cachedir = '/var/cache/fscache'
       $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
-    default  : {
+    'SuSE'      : {
+      $package_name = ['cachefilesd']
+      $service_name = 'cachefilesd'
+      $config = '/etc/cachefilesd.conf'
+      $binname = 'cachefilesd'
+      $hasstatus = true
+      $hasrestart = true
+      $cachedir = '/var/cache/fscache'
+      $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
+    }
+    'Gentoo'    : {
+      $package_name = ['cachefilesd']
+      $service_name = 'cachefilesd'
+      $config = '/etc/cachefilesd.conf'
+      $binname = 'cachefilesd'
+      $hasstatus = true
+      $hasrestart = true
+      $cachedir = '/var/cache/fscache'
+      $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
+    }
+    'Archlinux' : {
+      $package_name = ['cachefilesd']
+      $service_name = 'cachefilesd'
+      $config = '/etc/cachefilesd.conf'
+      $binname = 'cachefilesd'
+      $hasstatus = true
+      $hasrestart = true
+      $cachedir = '/var/cache/fscache'
+      $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
+    }
+    'Mandrake'  : {
+      $package_name = ['cachefilesd']
+      $service_name = 'cachefilesd'
+      $config = '/etc/cachefilesd.conf'
+      $binname = 'cachefilesd'
+      $hasstatus = true
+      $hasrestart = true
+      $cachedir = '/var/cache/fscache'
+      $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
+    }
+    default     : {
       fail("The ${module_name} module is not supported on an ${::osfamily} based system.")
     }
   }
