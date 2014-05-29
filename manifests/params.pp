@@ -3,16 +3,16 @@ class cachefilesd::params {
   $service_ensure = 'running'
   $service_manage = true
   $package_ensure = 'present'
-  $cachetag       = 'nfscache'
-  $culltable      = '12'
-  $disablecull    = false
-  $debugcache     = '0'
-  $brun           = '10%'
-  $frun           = '10%'
-  $bcull          = '7%'
-  $fcull          = '7%'
-  $bstop          = '3%'
-  $fstop          = '3%'
+  $cachetag = 'nfscache'
+  $culltable = '12'
+  $disablecull = false
+  $debugcache = '0'
+  $brun = '10%'
+  $frun = '10%'
+  $bcull = '7%'
+  $fcull = '7%'
+  $bstop = '3%'
+  $fstop = '3%'
 
   case $::osfamily {
     'RedHat' : {
@@ -23,7 +23,7 @@ class cachefilesd::params {
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
-      $secctx   = 'system_u:system_r:cachefiles_kernel_t:s0'
+      $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
     'SuSE'   : {
       $package_name = ['cachefilesd']
@@ -33,7 +33,7 @@ class cachefilesd::params {
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
-      $secctx = undef
+      $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
     default  : {
       fail("The ${module_name} module is not supported on an ${::osfamily} based system.")
