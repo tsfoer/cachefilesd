@@ -14,13 +14,15 @@
     "manifests/params.pp": "6bc0d6516b841ff0125a80c9f070f47b",
     "tests/init.pp": "4990367b6da0186d7e6f5ca8e37a7204"
   },
-  "dependencies": [],
-  "description": "",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">3.0.0"}
+  ],
+  "description": "Puppet module to configure cachefilesd.",
   "license": "GPL v2",
   "name": "brentsch-cachefilesd",
-  "project_page": "",
-  "source": "",
+  "project_page": "https://github.com/phoenixv/cachefilesd",
+  "source": "https://github.com/phoenixv/cachefilesd",
   "summary": "Module to control and configure cachefilesd.",
   "types": [],
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
