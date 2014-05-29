@@ -1,4 +1,4 @@
-name    'brentsch-cachefilesd'
+name    'brentschler-cachefilesd'
 version '1.0.0'
 source 'https://github.com/phoenixv/cachefilesd'
 author 'Bob Rentschler'

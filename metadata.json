@@ -19,7 +19,7 @@
   ],
   "description": "Puppet module to configure cachefilesd.",
   "license": "GPL v2",
-  "name": "brentsch-cachefilesd",
+  "name": "brentschler-cachefilesd",
   "project_page": "https://github.com/phoenixv/cachefilesd",
   "source": "https://github.com/phoenixv/cachefilesd",
   "summary": "Module to control and configure cachefilesd.",
