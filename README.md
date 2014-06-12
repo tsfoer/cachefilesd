@@ -3,12 +3,13 @@
 #### Table of Contents
 
 1. [Overview](#overview)
-2. [Dependencies](#dependencies)
-3. [Examples](#examples)
-4. [Parameters](#parameters)
-5. [Limitations](#limitations)
-6. [License](#license)
-7. [Development](#development)
+2. [Compatability](#compatability)
+3. [Dependencies](#dependencies)
+4. [Examples](#examples)
+5. [Parameters](#parameters)
+6. [Limitations](#limitations)
+7. [License](#license)
+8. [Development](#development)
 
 
 # Overview
@@ -83,17 +84,19 @@ cachefilesd::fstop: '5%'
 All Parameters are optional, if none are specified the defaults will use all but 10% of the drive on
 which the cache resides.
 
-- brun - Defaults to 10%. Amount of free space (in blocks) required for free running operation.
-- frun - Defaults to 10%. Number of free files on the filesystem required for free running operation.
-- bcull - Defaults to 7%. Amount of free space (in blocks) remaining at which cachefilesd culls the cache.
-- fcull - Defaults to 7%. Same as bcull but for free files remaining.
-- bstop - Defaults to 3%. Amount of free space (in blocks) remaining at which cachefilesd stops writing new files.
-- fstop - Defaults to 3%. Same as bstop but for free files remaining.
-- cachedir - Location for the cache (/var/cache/fscache). It is not recommended to change this, particularly if selinux is enabled.
-- disablecull - Default false. Turns off culling, may be useful in some cases but generally should be left alone.
-- debugcache - Defaults to 0, see **man cachefilesd.conf** for values.
-- culltable - Defaults to 12, see **man cachefilesd.conf** for values.
-- secctx - Default is OS dependant. SElinux context to run under.
+|Variable	| Default value| Description|
+|:---------:|:-------------:|:-----------|
+| brun   	 | 10% 			| Amount of free space (in blocks) required for free running operation. |
+| frun   	 | 10% 			| Number of free files on the filesystem required for free running operation.
+| bcull  	 |  7% 			| Amount of free space (in blocks) remaining at which cachefilesd culls the cache.
+| fcull   	 |  7% 			| Same as bcull but for free files remaining.
+| bstop   	 |  3% 			| Amount of free space (in blocks) remaining at which cachefilesd stops writing new files.
+| fstop   	 |  3% 			| Same as bstop but for free files remaining.
+| cachedir   |/var/run/fscache| Location for the cache. It is not recommended to change this, particularly if selinux is enabled.
+| disablecull| false		| Turns off culling, may be useful in some cases but generally should be left alone.
+| debugcache |0				| See **man cachefilesd.conf** for values.
+| culltable  |12			| See **man cachefilesd.conf** for values.
+| secctx 	 |*OS dependant*| SElinux context to run under.
 
 # Limitations
 
