@@ -19,7 +19,8 @@ describe 'cachefilesd' do
     }
     
     it {
-      should contain_file('cachefilesd_config_file').with_content(%{"# This file maintained by puppet, do not edit.
+      should contain_file('cachefilesd_config_file').with_content(
+%{"#This file maintained by puppet, do not edit.
 
 dir /var/cache/fscache
 tag nfscache
@@ -44,7 +45,9 @@ fcull 7%
 bstop 3%
 fstop 3%
 
-secctx system_u:system_r:cachefiles_kernel_t:s0"})
+secctx system_u:system_r:cachefiles_kernel_t:s0
+
+"})
     }
   end 
 end  
