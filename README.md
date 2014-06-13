@@ -1,5 +1,9 @@
 # brentschler-cachefilesd
 
+[![Build Status](
+https://api.travis-ci.org/phoenixv/cachefilesd.png?branch=master)](https://travis-ci.org/phoenixv/cachefilesd)
+
+
 #### Table of Contents
 
 1. [Overview](#overview)
