@@ -19,7 +19,7 @@ describe 'cachefilesd' do
     }
     
     it {
-      should contain_file('nsswitch_config_file').with_content(%{"# This file maintained by puppet, do not edit.
+      should contain_file('cachefilesd.conf').with_content(%{"# This file maintained by puppet, do not edit.
 
 dir /var/cache/fscache
 tag nfscache
