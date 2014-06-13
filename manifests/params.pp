@@ -19,7 +19,6 @@ class cachefilesd::params {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
-      $binname = 'hddtemp'
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
@@ -29,7 +28,6 @@ class cachefilesd::params {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
-      $binname = 'cachefilesd'
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
@@ -39,7 +37,6 @@ class cachefilesd::params {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
-      $binname = 'cachefilesd'
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
@@ -49,7 +46,6 @@ class cachefilesd::params {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
-      $binname = 'cachefilesd'
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
@@ -59,7 +55,6 @@ class cachefilesd::params {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
-      $binname = 'cachefilesd'
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
@@ -69,7 +64,6 @@ class cachefilesd::params {
       $package_name = ['cachefilesd']
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
-      $binname = 'cachefilesd'
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
