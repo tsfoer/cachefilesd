@@ -1,6 +1,10 @@
 require 'spec_helper'
 describe 'cachefilesd' do
 
+  it { should compile.with_all_deps }
+
+  describe 'with default values for all parameters' do
+
   describe 'packages' do
     context 'with default params ' do
       it do
@@ -52,5 +56,5 @@ secctx system_u:system_r:cachefiles_kernel_t:s0
   }
       end
     end
-
+  end
 end
