@@ -1,11 +1,10 @@
 require 'spec_helper'
 describe 'cachefilesd' do
-
-  it { should compile.with_all_deps }
   
   describe 'with default values for all parameters' do
     let(:facts) { { :osfamily => 'RedHat' } }
-      
+    
+    it { should compile.with_all_deps }  
     it { should contain_class('cachefilesd') }
     
     it {
@@ -46,7 +45,6 @@ bstop 3%
 fstop 3%
 
 secctx system_u:system_r:cachefiles_kernel_t:s0
-
 "})
     }
   end 
