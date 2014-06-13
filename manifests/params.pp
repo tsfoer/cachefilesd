@@ -2,7 +2,7 @@ class cachefilesd::params {
   $service_enable = true
   $service_ensure = 'running'
   $service_manage = true
-  $package_ensure = 'present'
+  $package_ensure = 'installed'
   $cachetag = 'nfscache'
   $culltable = '12'
   $disablecull = false
