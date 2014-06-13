@@ -1,4 +1,4 @@
-# This file maintained by puppet, do not edit.
+#This file maintained by puppet, do not edit.
 
 dir <%= @cachedir %>
 tag <%= @cachetag %>
@@ -7,7 +7,7 @@ culltable <%= @culltable %>
 <% end %>
 <% if @disablecull == true -%>
 nocull
-<% end %>
+<% end -%>
 
 # brun and frun represent the percent of free space (blocks) and free files available in the
 # filesystem the cache resides on required for cachefilesd to run freely. (no culling, files
@@ -32,4 +32,4 @@ fstop <%= @fstop %>
 <% if @secctx -%>
 secctx <%= @secctx %>
 
-<% end %>
+<% end -%>
