@@ -9,7 +9,7 @@ describe 'cachefilesd' do
     it { should contain_class('cachefilesd') }
     
     it {
-      should contain_file('cachefilesd.conf').with({
+      should contain_file('cachefilesd_config_file').with({
         'ensure'  => 'file',
         'path'    => '/etc/cachefilesd.conf',
         'owner'   => 'root',
