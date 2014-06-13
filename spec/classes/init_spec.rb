@@ -4,7 +4,6 @@ describe 'cachefilesd' do
   describe 'with default values for all parameters' do
     let(:facts) { { :osfamily => 'RedHat' } }
     
-    it { should compile.with_all_deps }  
     it { should contain_class('cachefilesd') }
     
     it {
@@ -23,7 +22,7 @@ describe 'cachefilesd' do
 
 dir /var/cache/fscache
 tag nfscache
-        
+
 # brun and frun represent the percent of free space (blocks) and free files available in the
 # filesystem the cache resides on required for cachefilesd to run freely. (no culling, files
 # added as accessed)
@@ -35,7 +34,7 @@ frun 10%
 # will start culling the cache (deleteing files)
 
 bcull 7%
-fcull 7%        
+fcull 7%
 
 # bstop and fstop represent the percent free on the file system at which point cachefilesd will
 # stop writing new files. It will resume writes only after the free space has risen to the
