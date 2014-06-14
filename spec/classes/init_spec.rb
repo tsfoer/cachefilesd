@@ -21,6 +21,7 @@ describe 'cachefilesd' do
 
 dir /var/cache/fscache
 tag nfscache
+culltable 12
 
 # brun and frun represent the percent of free space (blocks) and free files available in the
 # filesystem the cache resides on required for cachefilesd to run freely. (no culling, files
