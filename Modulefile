@@ -1,5 +1,5 @@
 name    'brentschler-cachefilesd'
-version '1.0.0'
+version '1.0.1'
 source 'https://github.com/phoenixv/cachefilesd'
 author 'Bob Rentschler'
 license 'GPL v2'
