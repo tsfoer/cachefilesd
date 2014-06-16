@@ -25,6 +25,8 @@ Reasonable defaults have been set, so including the module with no settings will
 
 ## Compatability
 
+This module has been tested to work with puppet 3.0.x and greater
+
 This module has been tested to work on the following systems.
 
 * Fedora 20
