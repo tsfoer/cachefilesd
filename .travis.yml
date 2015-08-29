@@ -2,18 +2,18 @@
 before_install:
  - sudo apt-get install -y cachefilesd
 env:
-  - PUPPET_VERSION=2.7.23
   - PUPPET_VERSION=3.3.2
   - PUPPET_VERSION=3.4.2
   - PUPPET_VERSION=3.5.1
   - PUPPET_VERSION=3.6.0
+  - PUPPET_VERSION=4.1.0
 notifications:
   email:
     - phoenixv@gmail.com
 rvm:
-  - 1.8.7
   - 1.9.3
   - 2.0.0
+  - 2.2.2
 language: ruby
 before_script: "gem install --no-ri --no-rdoc bundler"
 script: 'bundle exec rake validate && bundle exec rake lint && SPEC_OPTS="--format documentation" bundle exec rake spec'
