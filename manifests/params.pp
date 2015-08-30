@@ -16,7 +16,7 @@ class cachefilesd::params {
 
   case $::osfamily {
     'RedHat'    : {
-      $package_name = ['cachefilesd']
+      $package_name = 'cachefilesd'
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
       $hasstatus = true
@@ -25,7 +25,7 @@ class cachefilesd::params {
       $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
     'Debian'    : {
-      $package_name = ['cachefilesd']
+      $package_name = 'cachefilesd'
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
       $hasstatus = true
@@ -34,7 +34,7 @@ class cachefilesd::params {
       $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
     'SuSE'      : {
-      $package_name = ['cachefilesd']
+      $package_name = 'cachefilesd'
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
       $hasstatus = true
@@ -43,7 +43,7 @@ class cachefilesd::params {
       $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
     'Gentoo'    : {
-      $package_name = ['cachefilesd']
+      $package_name = 'cachefilesd'
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
       $hasstatus = true
@@ -52,7 +52,7 @@ class cachefilesd::params {
       $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
     'Archlinux' : {
-      $package_name = ['cachefilesd']
+      $package_name = 'cachefilesd'
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
       $hasstatus = true
@@ -61,7 +61,7 @@ class cachefilesd::params {
       $secctx = 'system_u:system_r:cachefiles_kernel_t:s0'
     }
     'Mandrake'  : {
-      $package_name = ['cachefilesd']
+      $package_name = 'cachefilesd'
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
       $hasstatus = true
