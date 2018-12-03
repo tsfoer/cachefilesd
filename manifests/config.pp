@@ -7,4 +7,13 @@ class cachefilesd::config inherits cachefilesd {
     mode    => '0644',
     content => template('cachefilesd/cachefilesd.conf.erb'),
   }
+  
+  file { cachefilesd_default_file:
+    ensure  => file,
+    path    => $defaultfile,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    content => template('cachefilesd/defaultfile.erb'),
+  }
 }

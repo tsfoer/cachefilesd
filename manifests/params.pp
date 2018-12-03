@@ -28,6 +28,7 @@ class cachefilesd::params {
       $package_name = 'cachefilesd'
       $service_name = 'cachefilesd'
       $config = '/etc/cachefilesd.conf'
+      $defaultfile = '/etc/default/cachefilesd'
       $hasstatus = true
       $hasrestart = true
       $cachedir = '/var/cache/fscache'
