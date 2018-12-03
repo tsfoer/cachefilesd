@@ -28,5 +28,5 @@
   "source": "https://github.com/phoenixv/cachefilesd",
   "summary": "Module to control and configure cachefilesd.",
   "types": [],
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
